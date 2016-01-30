@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/canvas.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/shape.js"></script>
+    <script src="js/canvas.js"></script>
+</head>
+<body>
+
+    <div id="content">
+        <header id="toolbox">
+            <ul>
+                <li id="image">
+                    <h4>文件</h4>
+                    <ul class="text">
+                        <li ><button data-role="clear">清除画布</button></li>
+                        <li ><button data-role="fanhui">返回上步</button></li>
+                        <li ><button data-role="kan">下载图片</button></li>
+                        <li ><button id="select">选择图像</button></li>
+                    </ul>
+                </li>
+                <li id="tool">
+                    <h4>工具</h4>
+                    <ul class="type">
+                        <li class="typeli af" data-role="stroke"><img src="images/line.png"></li>
+                        <li class="typeli af" data-role="fill"><img src="images/Paint.png"></li>
+                        <li id="xp" class="xiangpi af"><img src="images/Eraser.png">
+                            <ul>
+                                <li data-role="8">小</li>
+                                <li data-role="10">中</li>
+                                <li data-role="20">大</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="shape">
+                    <h4>形状</h4>
+                    <ul class="shapes">
+                        <li data-role="line"><img class="aff" src="images/line.png"></li>
+                        <li data-role="arc"><img class="aff" src="images/arc.png"></li>
+                        <li data-role="rect"><img class="aff" src="images/rect.png"></li>
+                        <li data-role="poly"><img class="aff" src="images/poly.png"></li>
+                        <li data-role="five"><img class="aff" src="images/star105.png"></li>
+                        <li data-role="pen"><img class="aff" src="images/Brush.png"></li>
+                    </ul>
+                </li>
+                <li id="size">
+                    <h4>粗细</h4>
+                    <ul class="size">
+                        <li data-role="1" ><img src="images/line1px.png" /></li>
+                        <li data-role="3" ><img src="images/line3px.png" /></li>
+                        <li data-role="5" ><img src="images/line5px.png" /></li>
+                        <li data-role="8" ><img src="images/line8px.png" /></li>
+                    </ul>
+                </li>
+                <li id="color">
+                    <h4>颜色</h4>
+                    <ul class="color">
+                    <input type="color"><span>边框</span><br>
+                    <input type="color"><span>填充</span>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <div class="copy">
+            <div class="xpc"></div>
+            <canvas id="canvas" width="810px" height="380px"></canvas>
+        </div>
+    </div>
+
+</body>
+</html>
